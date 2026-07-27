@@ -18,6 +18,13 @@ Promo_code_name VARCHAR (20)
 );
 
 
+
+
+
+
+
+
+
 INSERT INTO orders VALUES ('OF1900191801','UFDDN1991918XUY1','2025-01-01 15:30:20','KMKMH6787','Lebanese','Delivered','Tasty50');
 INSERT INTO orders VALUES ('OF1900191802','UFDDN1991918XUY1','2025-01-02 12:15:45','LEBANESE2','Lebanese','Delivered',null);
 INSERT INTO orders VALUES ('OF1900191803','UFDDN1991918XUY1','2025-01-10 18:45:30','PIZZA123','Italian','Cancelled','HUNGRY20');
@@ -140,11 +147,6 @@ WHERE NOT (MONTH(placed_at) = 1
 GROUP BY Customer_code 
 HAVING COUNT(*) = 1;
 
-SELECT * FROM CTE;
-
-
-
-SELECT * FROM orders;
 
 -- 4))  List of All the customer with no order in the last 7 days but were acquired one month ago with their first order on promo
 
